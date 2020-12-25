@@ -1,8 +1,28 @@
+import urllib.request
+import colorama
+from colorama import Fore, Back, Style, init
+import os
+import time
+import sys
 
-print(" \033[95m example : http://www.site.com/")
-print(" \033[95m example: www.example.com/")
+os.system('clear')
+print(Fore.BLUE + '''
+Vatan ne Türkiye’dir Türklere, ne Türkistan, Vatan büyük ve müebbet bir ülkedir; Turan… -Ziya Gökâlp
+
+Dalından kopan yaprağın akıbetini rüzgâr tayin eder... Alparslan Türkeş
+
+Zevki sefa sürmesini bilmedik bu” Vatan” uğruna ant içtik! Can çekişmeyi değil” Bayrak” uğruna can almayı öğrendik!
+
+Milleti ve Vatanı bölmek isteyenlerle kavgamız vardır. Alparslan Türkeş
+
+Dilde birlik, işte birlik, fikirde birlik...  Gaspıralı İsmail
+
+
+''')
+print(Fore.RED + " örnek(example)---> https://wwww.site.com/ ")
+print(Fore.RED + " örnek(example)----> http://www.site.com/")
 print("                                                                       ")
-url = input("\033[97m enter the website : ")
+url = input(Fore.LIGHTGREEN_EX + "enter the website : ")
 
 print ("start : ")
 print("                                                                                        ")
@@ -130,13 +150,14 @@ for hani in passe :
     curl = url+hani
     try :
         openurl = urllib.request.urlopen(curl)
-        print("______________________________________")
+        print("_____________________________________________________________")
         print("                                                             ")
-        print("\033[92m BULUNDU -> "+curl)
-        print("______________________________________")
+        print("           BULUNDU !!! "+curl)
+        print("_____________________________________________________________")
     except urllib.error.URLError as msg :
-        print ("\033[91m BULUNAMADI "+curl)
+        print ("          BULUNAMADI:  "+curl)
 
 
-print ("-------------------------------------")
-print ("\033[93m   GOOD BYEEE ")
+print ("----------------------------------------------------------------------------------------")
+print ("               SCRİPT HAWK OFCX TARAFINDAN KODLANMIŞTIR                                 ")
+print ("----------------------------------------------------------------------------------------")
